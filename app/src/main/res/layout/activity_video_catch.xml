@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VideoCatchActivity"
+    android:background="#a2a4a9">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好看的人才会看到这个"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_centerHorizontal="true"/>
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/video"
+        android:layout_below="@id/title"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="·美丽约是真是的短视频交友社区，好看的人进来都会拍3秒视频\n·拍摄成功后，视频将对外展示；您可以在主页进行修改"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"/>
+
+
+    <TextView
+        android:id="@+id/video_catch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="拍摄"
+        android:background="@drawable/video_background"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

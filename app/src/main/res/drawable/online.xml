@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Focused states -->
+    <item android:state_focused="false"  android:state_selected="true" android:drawable="@mipmap/online_pressed" />
+    <item android:state_focused="false" android:state_selected="false" android:drawable="@mipmap/online" />
+</selector>

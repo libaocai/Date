@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorActionBar">#332c41</color>
+    <color name="colorInterview">#322c40</color>
+    <color name="colorGenderMale">#a0d9f6</color>
+    <color name="colorGenderFeale">#ff8092</color>
+    <color name="colorGenderNoselect">#9d9ba4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorNotSelected">#969696</color>
+    <color name="press">#e8e8e8</color>
+    <color name="main_theme_color">#0195ff</color>
+
+    <color name="black_textview">#575757</color>
+    <color name="group_list_black_textview">#353535</color>
+    <color name="group_list_gray">#999999</color>
+    <color name="group_list_liner">#e4e4e4</color>
+    <color name="main_title_backgroud">#F2F2F2</color>
+    <color name="main_regist">#ffffff</color>
+    <color name="button_backgroud">#0195ff</color>
+    <color name="de_title_bg">#0195ff</color>
+    <color name="seal_bg">#f0f0f6</color>
+    <color name="text_line_color">#dfdfdd</color>
+    <color name="text_black_color">#333333</color>
+    <color name="text_tips_color">#666666</color>
+    <color name="mine_head_color">#cccccc</color>
+
+    <color name="blue">#81b6ff</color>
+    <color name="blue_green">#0edff5</color>
+    <color name="green">#00e5bb</color>
+    <color name="orange">#ff9a7c</color>
+    <color name="pink">#ff84c0</color>
+    <color name="red">#ff828e</color>
+    <color name="yellow">#ffbf3e</color>
+</resources>

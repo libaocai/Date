@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FriendsListActivity"
+    android:background="#f2f4fc">
+
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#332c41"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="好友"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/add_new_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:background="#332c41"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text="添加好友"
+            android:visibility="visible"/>
+        <LinearLayout
+            android:id="@+id/back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/back"
+                android:layout_marginLeft="10dp"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:id="@+id/friend_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="好友"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"/>
+            <ImageView
+                android:id="@+id/friend_line"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:src="@color/yellow"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/attention_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/attention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+            <ImageView
+                android:id="@+id/attention_line"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:src="@color/yellow"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fans_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/fans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="粉丝"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+            <ImageView
+                android:id="@+id/fans_line"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+
+                android:src="@color/yellow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:layout_marginTop="10dp">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

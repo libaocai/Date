@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速登录"
+            android:layout_gravity="center"
+            android:textColor="#918f9d"
+            android:textSize="14dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/wechat"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:src="@mipmap/wechat" />
+
+            <ImageView
+                android:id="@+id/webo"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@mipmap/webo" />
+
+            <ImageView
+                android:id="@+id/qq"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:src="@mipmap/qq" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/email_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/link_string"
+            android:layout_gravity="center"
+            android:autoLink="all"
+            android:textColor="#f7f7f8"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</RelativeLayout>
